@@ -18,6 +18,7 @@
       "@cavallanti-ui/": ["packages/grid/src/index.ts"],
       "@cavallanti-ui/button": ["packages/button/src/index.ts"],
       "@cavallanti-ui/header": ["packages/header/src/index.ts"],
+      "@cavallanti-ui/hero": ["packages/hero/src/index.ts"],
       "@cavallanti-ui/navbar": ["packages/navbar/src/index.ts"]
     }
   },
