@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@cavallanti-ui/": ["packages/grid/src/index.ts"],
       "@cavallanti-ui/button": ["packages/button/src/index.ts"]
     }
   },
