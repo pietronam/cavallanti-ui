@@ -1,6 +1,4 @@
 import { Header } from "@cavallanti-ui/header";
-import { linkSync } from "fs";
-import { ReactNode } from "react";
 
 type NavbarPropsType = {
   headerText: string,
