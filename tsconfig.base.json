@@ -15,7 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@cavallanti-ui/": ["packages/grid/src/index.ts"],
+      "@cavallanti-ui/grid": ["packages/grid/src/index.ts"],
       "@cavallanti-ui/button": ["packages/button/src/index.ts"],
       "@cavallanti-ui/footer": ["packages/footer/src/index.ts"],
       "@cavallanti-ui/header": ["packages/header/src/index.ts"],
