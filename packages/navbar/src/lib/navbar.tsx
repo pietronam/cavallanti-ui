@@ -15,7 +15,6 @@ type NavbarPropsType = {
 export function Navbar({ headerText, links }: NavbarPropsType) {
   const navbarStyle = {
     display: "flex",
-    //width: "100vw",
     padding: 20
   }
 
@@ -34,7 +33,7 @@ export function Navbar({ headerText, links }: NavbarPropsType) {
   return (
     <div style={navbarStyle}>
       <div style={headerStyle}>
-        <Header size="xl">{headerText}</Header>
+        <Header size="lg">{headerText}</Header>
       </div>
       <div style={linkStyle}>
         {links.map((item) => {
