@@ -1,9 +1,12 @@
+import { ReactNode } from "react";
+
 type GridPropsType = {
   columns: number,
   gap: number,
+  children?: ReactNode,
 }
 
-const Grid = ({ columns, gap }: GridPropsType) => {
+ export const Grid = ({ columns, gap, children }: GridPropsType) => {
   const gridStyle = {
     display: "grid",
     gridTemplateColumns: `repeat(${columns}, 1fr)`,
@@ -11,7 +14,7 @@ const Grid = ({ columns, gap }: GridPropsType) => {
   };
 
   return (
-    <div style={gridStyle}></div>
+    <div style={gridStyle}>{children}</div>
   );
 }
 
