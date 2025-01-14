@@ -5,7 +5,7 @@ import { Button } from '@cavallanti-ui/button';
 export function App() {
   return (
     <div>
-      <Button/>
+      <Button label='BOTTONE' color='white' bgColor='green' onClick={() => alert("HELP")}/>
       
     </div>
   );
