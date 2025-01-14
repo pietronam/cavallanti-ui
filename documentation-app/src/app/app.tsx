@@ -2,12 +2,25 @@
 import { Button } from '@cavallanti-ui/button';
 import { Grid } from '@cavallanti-ui/grid';
 import { Header } from '@cavallanti-ui/header';
-
+import { Navbar } from '@cavallanti-ui/navbar';
+import "./app.css"
 
 export function App() {
+  const MockNavbarLinks = [
+    {
+      name: "hello",
+      link: ""
+    },
+    {
+      name: "hi",
+      link: ""
+    },
+  ]
+
   return (
-    <div>
-      <Button label='BOTTONE' color='white' bgColor='green' onClick={() => alert("HELP")}/>
+    <>
+      <Navbar headerText='CAVALLANTI-UI' links={MockNavbarLinks}></Navbar>
+      <Button label='BOTTONE' color='white' bgColor='green' onClick={() => alert("HELP")} />
       <Grid columns={3} gap={10}>
         <span>hi</span>
         <span>hi</span>
@@ -19,7 +32,7 @@ export function App() {
       <Header size="lg">big header</Header>
       <Header size="md">very average header</Header>
       <Header size="sm">smol header</Header>
-    </div>
+    </>
   );
 }
 
