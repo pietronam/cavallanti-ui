@@ -4,6 +4,7 @@ import { Grid } from '@cavallanti-ui/grid';
 import { Header } from '@cavallanti-ui/header';
 import { Navbar } from '@cavallanti-ui/navbar';
 import "./app.css"
+import { Hero } from '@cavallanti-ui/hero';
 
 export function App() {
   const MockNavbarLinks = [
@@ -20,7 +21,11 @@ export function App() {
   return (
     <>
       <Navbar headerText='CAVALLANTI-UI' links={MockNavbarLinks}></Navbar>
+      
+      <Hero heroText={"HELP"} subtitleText='HELP ME'></Hero>
+
       <Button label='BOTTONE' color='white' bgColor='green' onClick={() => alert("HELP")} />
+      
       <Grid columns={3} gap={10}>
         <span>hi</span>
         <span>hi</span>
@@ -28,6 +33,7 @@ export function App() {
         <span>hi</span>
         <span>hi</span>
       </Grid>
+
       <Header size="xl">very big header</Header>
       <Header size="lg">big header</Header>
       <Header size="md">very average header</Header>

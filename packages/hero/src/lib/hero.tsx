@@ -1,9 +1,35 @@
-import styles from './hero.module.css';
+import { Header } from "@cavallanti-ui/header";
 
-export function Hero() {
+type HeroPropsType = {
+  heroText: string,
+  subtitleText: string,
+}
+
+export function Hero({ heroText, subtitleText }: HeroPropsType) {
+  const heroStyle = {
+    display: "flex",
+    flexDirection: "column" as any,
+    alignItems: "center",
+    justifyContent: "center",
+    padding: 200
+  }
+
+  const titleStyle = {
+    display: "flex",
+  }
+
+  const subtitleStyle = {
+    display: "flex",
+  }
+
   return (
-    <div className={styles['container']}>
-      <h1>Welcome to Hero!</h1>
+    <div style={heroStyle}>
+      <div style={titleStyle}>
+        <Header size="xl">{heroText}</Header>
+      </div>
+      <div style={subtitleStyle}>
+        <span>{subtitleText}</span>
+      </div>
     </div>
   );
 }
