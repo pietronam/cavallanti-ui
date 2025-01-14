@@ -15,7 +15,8 @@ type NavbarPropsType = {
 export function Navbar({ headerText, links }: NavbarPropsType) {
   const navbarStyle = {
     display: "flex",
-    padding: 20
+    padding: 20,
+    backgroundColor: "gray"
   }
 
   const headerStyle = {
