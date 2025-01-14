@@ -1,8 +1,34 @@
-import styles from './header.module.css';
+import { ReactNode } from "react";
 
-export function Header() {
+type HeaderPropsType = {
+  size: "sm" | "md" | "lg" | "xl",
+  fontFamily?: string,
+  children?: ReactNode
+}
+
+export function Header({size, fontFamily, children}: HeaderPropsType) {
+  const headerStyle = {
+    fontFamily: fontFamily || "inherit"
+  }
+  
+  const getHeaderTag = () => {
+    switch (size) {
+      case "sm":
+        return "h4";
+      case "md":
+        return "h3";
+      case "lg":
+        return "h2";
+      case "xl":
+        return "h1";
+      default:
+        return "h1";
+    }
+  };
+  const HeaderTag = getHeaderTag();
+  
   return (
-    <h1>HEADER</h1>
+    <HeaderTag style={headerStyle}>{children}</HeaderTag>
   )
 }
 
