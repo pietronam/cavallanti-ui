@@ -1,4 +1,5 @@
 import { Header } from "@cavallanti-ui/header";
+import { Link } from "react-router";
 
 type NavbarPropsType = {
   headerText: string,
@@ -36,7 +37,7 @@ export function Navbar({ headerText, links }: NavbarPropsType) {
       </div>
       <div style={linkStyle}>
         {links.map((item) => {
-          return (<a href={item.link}>{item.name}</a>)
+          return <Link to={`/pages/${item.link}`}>{item.name}</Link>
         })}
       </div>
     </div>

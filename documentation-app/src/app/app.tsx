@@ -10,12 +10,28 @@ import { Footer } from '@cavallanti-ui/footer';
 export function App() {
   const MockNavbarLinks = [
     {
-      name: "hello",
-      link: ""
+      name: "Button",
+      link: "ButtonPage"
     },
     {
-      name: "hi",
-      link: ""
+      name: "Header",
+      link: "HeaderPage"
+    },
+    {
+      name: "Grid",
+      link: "GridPage"
+    },
+    {
+      name: "Navbar",
+      link: "NavbarPage"
+    },
+    {
+      name: "Hero",
+      link: "HeroPage"
+    },
+    {
+      name: "Footer",
+      link: "FooterPage"
     },
   ]
 
